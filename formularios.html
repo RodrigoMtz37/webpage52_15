@@ -63,6 +63,76 @@
                 <br>
                 <fieldset>
                     <legend>Datos trabajo</legend>
+                    <!-- Lista Desplegable (combobox) -->
+                    <div>
+                        <label for="Carreras">Carrera:</label>
+                        <select name="Carreras" id="Carreras">
+                            <option value="2">LTI</option>
+                            <option value="4">LA</option>
+                            <option value="7">CP</option>
+                            <option value="9">LNI</option>
+                        </select>
+                    </div>
+                    <!-- Lista con la opcion de seleccion multiple -->
+                    <div>
+                        <label for="CarrerasSelM">Carrera:</label>
+                        <select multiple name="CarrerasSelM" id="CarrerasSelM">
+                            <option value="2">LTI</option>
+                            <option value="4">LA</option>
+                            <option value="7">CP</option>
+                            <option value="9">LNI</option>
+                        </select>
+                    </div>
+                    <!-- Lista con agrupacion -->
+                    <div>
+                        <label for="CarrerasGpo">Carrera:</label>
+                        <select name="CarrerasGpo" id="CarrerasGpo">
+                            <optgroup label="Profesional">
+                                <option value="2">LTI</option>
+                                <option value="4">LA</option>
+                                <option value="7">CP</option>
+                                <option value="9">LNI</option>
+                            </optgroup>
+                            <optgroup label="Técnicas">
+                                <option value="19">Programación Web</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <!-- Data list element -->
+                    <div>
+                        <label for="lenguaje">Lenguaje:</label>
+                        <input type="text" name="lenguaje" id="lenguaje" list="lenguajes">
+                        <datalist id="lenguajes">
+                            <option value="Python">
+                            <option value="C++">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="Java">
+                        </datalist>
+                    </div>
+                    <!-- Textarea -->
+                    <div>
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+                    </div>
+                    <!-- Radio button -->
+                    <div>
+                        <label for="tigres">Tigres</label>
+                        <input type="radio" name="equipo" id="tigres">
+                        <label for="rayados">Rayados</label>
+                        <input type="radio" name="equipo" id="rayados">
+                        <label for="america">América</label>
+                        <input type="radio" name="equipo" id="america">
+                    <div>
+                    <div>
+                        <label for="helado">Helado</label>
+                        <input type="radio" name="postre" id="helado">
+                        <label for="paleta">Paleta</label>
+                        <input type="radio" name="postre" id="paleta">
+                        <label for="mangonada">Mangonada</label>
+                        <input type="radio" name="postre" id="mangonada">
+                    </div>
+                    <input type="submit" value="Ingresar">
                 </fieldset>
             </form>
 
